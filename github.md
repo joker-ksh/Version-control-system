@@ -88,3 +88,27 @@ git push -u origin feature-name
 # Create pull request on GitHub
 # After approval, merge into main branch
 ```
+
+
+
+# SSH Security for Codebase Access
+
+## Key Components
+
+### 1. SSH Authentication
+- SSH uses a pair of cryptographic keys:
+  - **Public key**: Shared with services like GitHub
+  - **Private key**: Kept securely on your local machine
+
+### 2. Key Generation Command
+- The command shown: `ssh-keygen -t ed25519 -C "email"`
+- This generates a new SSH key pair:
+  - `-t ed25519`: Specifies the type of key (Ed25519 - a modern, secure algorithm)
+  - `-C "email"`: Adds a comment (usually your email) to identify the key
+
+### 3. Authentication Flow
+- The private key stays on your local machine
+- The public key is added to GitHub (or other Git hosting service)
+- When you push code, your local machine uses the private key to sign the request
+- GitHub verifies this signature using your public key that you previously added
+- If the keys match, the push request is authenticated and allowed
