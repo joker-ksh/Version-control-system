@@ -112,6 +112,11 @@ Commands involved:
 - `git reset`
 - `git revert`
 
+![image](https://github.com/user-attachments/assets/60534904-4cf6-4d80-915f-55300c3b231e)
+
+
+
+
 ## 📌 Summary Table
 
 | Command | Description |
@@ -127,3 +132,11 @@ Commands involved:
 | `git rm <file>` | Remove file from Git |
 | `git reset --hard <id>` | Reset to a specific commit (destructive) |
 | `git revert <id>` | Revert a commit safely |
+
+
+
+
+
+
+
+
