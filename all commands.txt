@@ -1,0 +1,37 @@
+git config --global user.name "<name>" -> to set global name
+git config --global user.name    -> give the global name
+git config --global user.email "<email>" -> to set email 
+git config --global user.email   -> give the email set
+
+git init -> initialize the .git in the correct directory
+
+git add /<file path> -> to add the file for stagging state
+git diff   -> show the changes in code files 
+git add .  -> add all the files in git tracking
+git rm /<file path>  -> to remove a file from git stagging state
+
+git commit -m "msg"  -> commit the stagging state content of the git 
+
+git log   -> all commits in detailed
+git log --online -> commits in one line 
+git status   -> stagging status of the git 
+
+commits are in the form of linked list and the head points to the recent commit
+
+git reset --hard <commit ID> -> delete all the commits above the current commit id permanently
+git revert <commit ID>   -> just revert the commit with <commit id>
+
+
+
+
+
+GitHub
+git remote add origin git@joker-ksh  -> it will add the local git with name origin in remote GitHub
+git remote -v    -> to check whether local git added to remote or not
+By default the git branch name is master as it is older but in modern vcs it is named as main so we need to change it 
+git branch -M main  -> branch name master to main
+
+In remote vcs we should always check the pull request before push as it could be an existing repo so pull first 
+
+git pull --rebase origin main --> rebase => as the repo could be committed by other's , origin => remote vcs name and main => brach 
+git push -u origin main  ---> -u = > upstream set from local machine to remote vcs
