@@ -59,6 +59,19 @@ git push -u origin main
 
 > The `-u` (or `--set-upstream`) flag sets the remote branch as the upstream branch for your local branch, so you can use `git pull` and `git push` without additional parameters in the future.
 
+
+Resetting a commit 
+```bash
+git reset --hard <commit id>
+```
+
+Now for pushing this commit in remote server 
+```bash
+git push -f 
+```
+-f used coz the remote server and local servers has different states
+
+
 ## Best Practices for Collaboration
 
 1. **Always pull before pushing** to ensure you have the latest changes
