@@ -45,8 +45,16 @@ git branch  -> to check the current branch
 git branch "new-branch" =>  to create a new branch
 git checkout new-branch -> to switch to new branch
 
-merging branches
+merging branches simple
 git push --set-upstream origin piyush-feat  -> create a bew branch in origin server if the new branch not exists remotely	
 first checkout to the main branch (in which you want to add the existing branch) => git checkout main
 now merge the branch => git merge origin/piyush-feat (it will merge the branch locally)
 now push this to the server -> git push
+
+
+git checkout -b branch-name -> directly create a new branch and also switch into it
+
+
+Rebasing 
+In forward merging the whole branch commits compress into a single commit and added to the main branch but in rebasing whole branch is just kept in the main branch as it is
+rebasing can pollute the repo though so not preferred by organizations 
