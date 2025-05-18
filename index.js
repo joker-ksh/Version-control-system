@@ -9,3 +9,8 @@ const a = 1;
 const newFunc = () => {
     console.log("New function created")
 }
+
+//one more function
+const oneMore  = () => {
+    console.log('One more ');
+}
