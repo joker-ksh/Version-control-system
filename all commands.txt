@@ -35,3 +35,18 @@ In remote vcs we should always check the pull request before push as it could be
 
 git pull --rebase origin main --> rebase => as the repo could be committed by other's , origin => remote vcs name and main => brach 
 git push -u origin main  ---> -u = > upstream set from local machine to remote vcs
+
+
+
+
+
+Branching 
+git branch  -> to check the current branch
+git branch "new-branch" =>  to create a new branch
+git checkout new-branch -> to switch to new branch
+
+merging branches
+git push --set-upstream origin piyush-feat  -> create a bew branch in origin server if the new branch not exists remotely	
+first checkout to the main branch (in which you want to add the existing branch) => git checkout main
+now merge the branch => git merge origin/piyush-feat (it will merge the branch locally)
+now push this to the server -> git push

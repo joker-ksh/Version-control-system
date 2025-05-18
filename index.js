@@ -4,3 +4,8 @@ const a = 1;
 
 
 //fake commit to revert
+
+//new branch functions 
+const newFunc = () => {
+    console.log("New function created")
+}
