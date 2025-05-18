@@ -58,3 +58,13 @@ git checkout -b branch-name -> directly create a new branch and also switch into
 Rebasing 
 In forward merging the whole branch commits compress into a single commit and added to the main branch but in rebasing whole branch is just kept in the main branch as it is
 rebasing can pollute the repo though so not preferred by organizations 
+git rebase [branch]
+
+stash -> temporary commit
+-> if remote code changed and needed to pull in the local git
+-> but in the local git some files are changed and not pushed to the remote yet then it need to push to remote before pulling
+-> in this scenario git stash can be worked 
+
+git stash -> just keep the current changes in a temporary file and sync the current code with the remote code
+git pull 
+git stash apply -> again keep the changes which was there in local 
